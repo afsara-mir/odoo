@@ -350,7 +350,7 @@ VALID_AGGREGATE_FUNCTIONS = {
 # THE FIELDS OF A MODEL
 #
 # The fields of a model are given by the model's definition classes, inherited
-# models ('_inherit' and '_inherits') and other parties, like custom fields.
+# models('_inherit' and '_inherits') and other parties, like custom fields.
 # Note that a field can be partially overridden when it appears on several
 # definition classes of its model.  In that case, the field's final definition
 # depends on the presence or absence of each definition class, which itself

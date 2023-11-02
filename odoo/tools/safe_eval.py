@@ -49,7 +49,7 @@ def to_opcodes(opnames, _opmap=opmap):
 _BLACKLIST = set(to_opcodes([
     # can't provide access to accessing arbitrary modules
     'IMPORT_STAR', 'IMPORT_NAME', 'IMPORT_FROM',
-    # could allow replacing or updating core attributes on models & al, setitem
+    # could allow replacing or updating core attributes on models& al, setitem
     # can be used to set field values
     'STORE_ATTR', 'DELETE_ATTR',
     # no reason to allow this

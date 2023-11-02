@@ -8,7 +8,7 @@ from odoo.tests import HttpCase
 @odoo.tests.tagged('-at_install', 'post_install')
 class TestGetModelDefinitions(HttpCase):
     def test_access_cr(self):
-        """ Checks that get_model_definitions does not return anything else than models """
+        """ Checks that get_model_definitions does not return anything else than models"""
         with self.assertRaises(KeyError):
             self.env['ir.model']._get_model_definitions(['res.users', 'cr'])
 

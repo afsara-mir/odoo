@@ -102,7 +102,7 @@ class IrModuleModule(models.Model):
 
             :param model_name: string with the technical name of the model for which to get data.
                 (the name must be one of the keys present in ``_theme_model_names``)
-            :return: recordset of theme template models (of type defined by ``model_name``)
+            :return: recordset of theme template models(of type defined by ``model_name``)
         """
         theme_model_name = self._theme_model_names[model_name]
         IrModelData = self.env['ir.model.data']

@@ -30,7 +30,7 @@ class BaseModuleUninstall(models.TransientModel):
             wizard.module_ids = modules if wizard.show_all else modules.filtered('application')
 
     def _get_models(self):
-        """ Return the models (ir.model) to consider for the impact. """
+        """ Return the models(ir.model) to consider for the impact. """
         return self.env['ir.model'].search([('transient', '=', False)])
 
     @api.depends('module_ids')

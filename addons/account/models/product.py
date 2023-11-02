@@ -120,7 +120,7 @@ class ProductProduct(models.Model):
             product_price_unit=None, product_taxes=None, fiscal_position=None
         ):
         """ Helper to get the price unit from different models.
-            This is needed to compute the same unit price in different models (sale order, account move, etc.) with same parameters.
+            This is needed to compute the same unit price in different models(sale order, account move, etc.) with same parameters.
         """
 
         product = self

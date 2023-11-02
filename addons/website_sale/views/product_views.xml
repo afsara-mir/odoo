@@ -24,7 +24,7 @@
         </field>
     </record>
 
-    <!-- We want website_id to be shown outside of website module like other models -->
+    <!-- We want website_id to be shown outside of website module like other models-->
     <record model="ir.ui.view" id="product_template_view_tree">
         <field name="name">product.template.view.tree.inherit.website_sale</field>
         <field name="model">product.template</field>

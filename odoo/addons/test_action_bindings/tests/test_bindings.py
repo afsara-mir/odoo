@@ -3,7 +3,7 @@ from odoo.tests import common
 class TestActionBindings(common.TransactionCase):
 
     def test_bindings(self):
-        """ check the action bindings on models """
+        """ check the action bindings on models"""
         Actions = self.env['ir.actions.actions']
 
         # first make sure there is no bound action

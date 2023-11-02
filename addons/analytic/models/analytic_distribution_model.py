@@ -55,7 +55,7 @@ class AccountAnalyticDistributionModel(models.Model):
     @api.model
     def _get_distribution(self, vals):
         """ Returns the distribution model that has the most fields that corresponds to the vals given
-            This method should be called to prefill analytic distribution field on several models """
+            This method should be called to prefill analytic distribution field on several models"""
         domain = []
         for fname, value in vals.items():
             domain += self._create_domain(fname, value) or []

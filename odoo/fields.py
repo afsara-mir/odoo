@@ -4657,7 +4657,7 @@ class Many2many(_RelationalMulti):
                     tables = sorted([model._table, comodel._table])
                     assert tables[0] != tables[1], \
                         "%s: Implicit/canonical naming of many2many relationship " \
-                        "table is not possible when source and destination models " \
+                        "table is not possible when source and destination models" \
                         "are the same" % self
                     self.relation = '%s_%s_rel' % tuple(tables)
                 if not self.column1:

@@ -684,7 +684,7 @@ class Picking(models.Model):
 
     def _get_show_allocation(self, picking_type_id):
         """ Helper method for computing "show_allocation" value.
-        Separated out from _compute function so it can be reused in other models (e.g. batch).
+        Separated out from _compute function so it can be reused in other models(e.g. batch).
         """
         if not picking_type_id or picking_type_id.code == 'outgoing':
             return False

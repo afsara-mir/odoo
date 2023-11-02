@@ -498,7 +498,7 @@ class Registry(Mapping):
                 _schema.warning(*e.args)
 
     def init_models(self, cr, model_names, context, install=True):
-        """ Initialize a list of models (given by their name). Call methods
+        """ Initialize a list of models(given by their name). Call methods
             ``_auto_init`` and ``init`` on each model to create or update the
             database tables supporting the models.
 

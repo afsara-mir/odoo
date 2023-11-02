@@ -400,7 +400,7 @@ class ProductTemplate(models.Model):
         display on the carousel on the website for this template.
 
         This returns a list and not a recordset because the records might be
-        from different models (template and image).
+        from different models(template and image).
 
         It contains in this order: the main image of the template and the
         Template Extra Images.

@@ -68,7 +68,7 @@ class Product(models.Model):
         display on the carousel on the website for this variant.
 
         This returns a list and not a recordset because the records might be
-        from different models (template, variant and image).
+        from different models(template, variant and image).
 
         It contains in this order: the main image of the variant (if set), the
         Variant Extra Images, and the Template Extra Images.

@@ -39,7 +39,7 @@ class Alias(models.Model):
                                           "corresponds. Any incoming email that does not reply to an "
                                           "existing record will cause the creation of a new record "
                                           "of this model (e.g. a Project Task)",
-                                      # hack to only allow selecting mail_thread models (we might
+                                      # hack to only allow selecting mail_thread models(we might
                                       # (have a few false positives, though)
                                       domain="[('field_id.name', '=', 'message_ids')]")
     alias_user_id = fields.Many2one('res.users', 'Owner', default=lambda self: self.env.user,
